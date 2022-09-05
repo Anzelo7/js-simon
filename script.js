@@ -10,7 +10,7 @@ let numbers = document.querySelector('randNumber');
 numbers = [];
 
 for (i = 1; i < 5; i++) {
-    numbers = Math.floor(Math.random() * 5) + 1;
+    numbers = Math.floor(Math.random() * 6);
     console.log(numbers)
 }
 document.getElementById('randNumber').innerHTML = numbers
