@@ -5,15 +5,13 @@ console.log('JS OK')
 //Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.
 
 //Visualizzare 5 numeri random
-let numbers = document.querySelector('randNumber');
-
-numbers = [];
-
+let numbers = document.getElementById('randNumber');
+let arrayNumbers = [];
 for (i = 1; i < 5; i++) {
-    numbers = Math.floor(Math.random() * 6);
-    console.log(numbers)
+    arrayNumbers.push(Math.floor(Math.random() * 5) + 1);
 }
-document.getElementById('randNumber').innerHTML = numbers
+numbers.innerHTML = numbers;
+console.log(arrayNumbers)
 
 //countdown di 30s con successiva richiesta
 let countdown = 30;
