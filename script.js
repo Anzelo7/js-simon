@@ -7,10 +7,10 @@ console.log('JS OK')
 //Visualizzare 5 numeri random
 let numbers = document.getElementById('randNumber');
 let arrayNumbers = [];
-for (i = 1; i < 5; i++) {
+for (i = 1; i < 6; i++) {
     arrayNumbers.push(Math.floor(Math.random() * 5) + 1);
 }
-numbers.innerHTML = numbers;
+numbers.innerHTML = arrayNumbers;
 console.log(arrayNumbers)
 
 //countdown di 30s con successiva richiesta
