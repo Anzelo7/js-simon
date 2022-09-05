@@ -14,11 +14,12 @@ numbers.innerHTML = arrayNumbers;
 console.log(arrayNumbers)
 
 //countdown di 30s con successiva richiesta
-let countdown = 30;
+let countdown = 5;
 
 const intervalId = setInterval(function () {
-    if (countdown > 0) {
 
+    if (countdown > 0) {
+        document.getElementById('randNumber').remove(arrayNumbers);
     } else {
         countdown = parseInt(prompt('Inserisci i numeri precedentemente esposti'))
         console.log(countdown);
@@ -27,14 +28,15 @@ const intervalId = setInterval(function () {
 
 }, 1000)
 
+
 setTimeout(function () {
     clearInterval(intervalId);
 }, (countdown * 1000) + 1200)
 
 //individuare numeri esatti
 
-if (numbers === countdown) {
-    console.log(countdown)
+if (arrayNumbers === countdown) {
+    console.log('Hai vinto!')
 } else {
     console.log('numeri errati')
 }
