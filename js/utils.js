@@ -13,7 +13,6 @@ function getUniqueRandomNumbers(howMany, min, max) {
         if (!array.includes(randomNumber)) {
             array.push(randomNumber);
         }
-
     }
     return array;
 }
